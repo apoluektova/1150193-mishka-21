@@ -1,0 +1,15 @@
+.goods-list {
+  width: 100%;
+  color: $white;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.goods-list__item {
+  padding: 24px 160px 31px 30px;
+  background-color: $medium-green;
+
+  &--active {
+    background-color: $light-green;
+  }
+}

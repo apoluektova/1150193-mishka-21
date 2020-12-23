@@ -1,0 +1,16 @@
+.contacts {
+  padding: 38px 29px 30px;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+
+.contacts__button {
+  @include no-button;
+  @include white-button;
+  padding: 16px 38px;
+}
