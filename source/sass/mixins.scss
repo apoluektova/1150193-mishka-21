@@ -24,4 +24,41 @@
   text-align: center;
   border: 2px solid $dark-brown;
   text-transform: uppercase;
+
+  &:hover {
+   background-color: $dark-brown;
+   color: $white;
+  }
+
+  &:active {
+    background-color: $dark-brown;
+    color: rgba($white, 0.3);
+  }
+}
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    color: rgba($black, 0.3);
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &::-moz-placeholder {
+    color: rgba($black, 0.3);
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:-moz-placeholder {
+    color: rgba($black, 0.3);
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba($black, 0.3);
+    font-size: 17px;
+    line-height: 18px;
+  }
 }
