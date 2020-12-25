@@ -1,0 +1,79 @@
+.form {
+  width: 100%;
+  padding: 17px 30px 55px;
+}
+
+.form__text {
+  margin-bottom: 29px;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $light-green;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include no-list;
+
+  &--radio {
+    margin-bottom: 19px;
+  }
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+
+  &--radio,
+  &--checkbox {
+    margin-left: 61px;
+  }
+}
+
+.form__item--radio {
+  margin-bottom: 24px;
+}
+
+.form__item--checkbox {
+  margin-bottom: 43px;
+}
+
+.form__name-wrapper {
+  width: 260px;
+}
+
+.form__input {
+  @include placeholder;
+  width: 260px;
+  padding: 17px 9px 17px 0;
+  border: none;
+  border-bottom: 2px solid $black;
+  margin-bottom: 22px;
+}
+
+.form__textarea {
+  width: 260px;
+  min-height: 142px;
+  padding: 17px;
+  color: rgba($black, 0.3);
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__asterisk {
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.form__submit-button {
+  @include no-button;
+  @include white-button;
+  padding: 18px 37px;
+}

@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "fonts";
+@import "blocks/header";
+@import "blocks/lead";
+@import "blocks/navigation";
+@import "blocks/goods-list";
+@import "blocks/weekly-promo";
+@import "blocks/table";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/table-contacts";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/lead-inner";
+@import "blocks/form";
+@import "blocks/catalog";
+@import "blocks/process";
+

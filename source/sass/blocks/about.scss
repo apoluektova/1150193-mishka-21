@@ -1,0 +1,24 @@
+.about {
+  padding: 31px 30px 58px;
+  color: $black;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+
+.about__list {
+  @include no-list;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.about__item {
+  width: 260px;
+  margin-bottom: 32px;
+}
+

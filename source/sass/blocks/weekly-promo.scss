@@ -1,0 +1,49 @@
+.weekly-promo {
+  width: 100%;
+  padding: 31px 30px 36px;
+}
+
+.weekly-promo__title {
+  color: $black;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.weekly-promo__text {
+  color: $light-green;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 17.5px;
+}
+
+.weekly-promo__description {
+  font-size: 15px;
+  width: 260px;
+}
+
+.weekly-promo__table {
+  margin-bottom: 28px;
+}
+
+.weekly-promo__image-wrapper {
+  margin-bottom: 25.5px;
+}
+
+.weekly-promo__price {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  width: 154px;
+  margin-bottom: 24.5px;
+}
+
+.weekly-promo__button {
+  @include no-button;
+  @include white-button;
+  padding: 16px 70px;
+  width: 260px;
+}
