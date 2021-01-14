@@ -1,3 +1,7 @@
-.navigation__toggle {
+.navigation {
   margin-left: auto;
+}
+
+.navigation__toggle {
+  @include no-button;
 }

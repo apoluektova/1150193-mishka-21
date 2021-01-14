@@ -1,10 +1,45 @@
 .header {
   width: 100%;
-  padding: 22px 31px;
+  padding: 22px 30px;
   display: flex;
+  border-bottom: 1px solid $light-grey;
 }
 
 .header__logo {
   margin: 0 auto;
-  margin-right: 67px;
+
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }
