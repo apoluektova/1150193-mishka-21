@@ -1,0 +1,26 @@
+.site-menu {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-menu {
+    @include no-list;
+    display: flex;
+    padding: 20.5px 10px 0 19px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .site-menu__item {
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .site-menu__link {
+    color: $black;
+  }
+}

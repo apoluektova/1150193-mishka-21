@@ -1,0 +1,41 @@
+.user-menu {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    display: grid;
+    grid-template-columns: 82px 316px;
+    @include no-list;
+    border-bottom: 1px solid rgba($black, 0.1);
+  }
+  .user-menu__item--search {
+    padding: 36px 31px 34px 33px;
+    grid-column: 1 / 2;
+    border-right: 1px solid rgba($black, 0.1);
+  }
+
+  .user-menu__icon {
+    display: block;
+  }
+
+  .user-menu__text--search {
+    display: none;
+  }
+
+  .user-menu__link {
+    display: flex;
+  }
+
+  .user-menu__item--cart {
+    grid-column: 2 / 3;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 32.5px 30px 31.5px 31px;
+  }
+
+  .user-menu__icon--cart {
+    margin-right: 25px;
+  }
+}
