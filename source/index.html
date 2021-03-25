@@ -78,16 +78,38 @@
     </svg>
     <header class="header">
       <nav class="header__navigation navigation">
-        <a class="navigation__link" aria-label="Логотип магазина Мишка">
-          <svg class="header__logo header__logo--mobile" width="86" height="35"><use xlink:href="#mishka-logo-mobile"></use></svg>
-          <svg class="header__logo header__logo--tablet" width="113" height="46"><use xlink:href="#mishka-logo-tablet"></use></svg>
-          <svg class="header__logo header__logo--desktop" width="149" height="72"><use xlink:href="#mishka-logo-desktop"></use></svg>
-        </a>
-        <button class="navigation__toggle" type="button" aria-label="Открыть/закрыть меню">
-          <svg class="navigation__menu" width="20" height="14"><use xlink:href="#menu"></use></svg>
-        </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__wrapper-user navigation__list user-menu">
+        <div class="navigation__wrapper navigation__wrapper--site">
+          <div class="navigation__wrapper-desktop">
+            <div class="navigation__wrapper-logo">
+              <a class="navigation__logo" aria-label="Логотип магазина Мишка">
+                <svg class="navigation__logo navigation__logo--mobile" width="86" height="35"><use xlink:href="#mishka-logo-mobile"></use></svg>
+                <svg class="navigation__logo navigation__logo--tablet" width="113" height="46"><use xlink:href="#mishka-logo-tablet"></use></svg>
+                <svg class="navigation__logo navigation__logo--desktop" width="149" height="72"><use xlink:href="#mishka-logo-desktop"></use></svg>
+              </a>
+              <button class="navigation__toggle" type="button" aria-label="Открыть/закрыть меню">
+                <svg class="navigation__menu" width="20" height="14"><use xlink:href="#menu"></use></svg>
+              </button>
+            </div>
+            <ul class="navigation__site navigation__list site-menu">
+              <li class="site-menu__item site-menu__item--catalog">
+                <a class="site-menu__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-menu__item">
+                <a class="site-menu__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="navigation__promo promo-menu">
+            <li class="promo-menu__item">
+              <a class="promo-menu__link href="#">Новые поступления</a>
+            </li>
+            <li class="promo-menu__item">
+              <a class="promo-menu__link href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation__wrapper navigation__wrapper--user">
+          <ul class="navigation__user navigation__list user-menu">
             <li class="user-menu__item user-menu__item--search">
               <a class="user-menu__link">
                 <svg class="user-menu__icon user-menu__icon--search" width="18" height="18">
@@ -105,16 +127,8 @@
               </a>
             </li>
           </ul>
-          <ul class="navigation__wrapper-site navigation__list site-menu">
-            <li class="site-menu__item">
-              <a class="site-menu__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-menu__item">
-              <a class="site-menu__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
+          <span class="navigation__delivery">Бесплатная доставка по России</span>
         </div>
-        <span class="navigation__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
 

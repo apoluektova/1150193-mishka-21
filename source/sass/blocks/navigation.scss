@@ -1,61 +1,119 @@
-.navigation {
-  align-self: center;
+.navigation__wrapper-logo {
+  @include wrapper;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.navigation__logo {
+    &--mobile {
+      display: block;
+    }
+
+    &--tablet,
+    &--desktop {
+      display: none;
+    }
 }
 
 .navigation__toggle {
   @include no-button;
+  margin-left: auto;
 }
 
 .navigation__delivery {
   display: none;
 }
 
-.navigation__wrapper {
-  display: none;
+.navigation__list {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
 }
 
 @media (min-width: $tablet-width) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &--site {
+      width: 370px;
+    }
+
+    &--user {
+      width: 398px;
+    }
+  }
+
+  .navigation__wrapper-logo {
+    padding: 21px 10px 20px 48px;
+    border-right: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+  }
+
   .navigation__toggle {
     display: none;
   }
 
-  .navigation {
-    display: grid;
-    grid-template-columns: 370px 82px 316px;
-    grid-template-rows: 88px auto;
-  }
+  .navigation__logo {
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
 
-  .navigation__link {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    padding: 22px 48px 20px;
-    margin: 0;
-    border-right: 1px solid rgba($black, 0.1);
-    border-bottom: 1px solid rgba($black, 0.1);
-  }
-
-  .navigation__wrapper {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    display: grid;
-    grid-template-columns: 370px 398px;
-    grid-template-rows: 88px auto;
-  }
-
-  .navigation__wrapper-user {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-
-  .navigation__wrapper-site {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    &--tablet {
+      display: block;
+    }
   }
 
   .navigation__delivery {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    padding: 19.5px 10px 0 10px;
+    display: block;
+    padding: 19.5px 50px 0 31px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__logo {
+    &--mobile,
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
+  .navigation__wrapper-desktop {
+    display: flex;
+    border-bottom: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
+  }
+
+  .navigation__wrapper {
+    &--site {
+      width: 750px;
+    }
+
+    &--user {
+      width: 400px;
+    }
+  }
+
+  .navigation__wrapper-logo {
+    order: 2;
+    padding: 8px 101px 7px 9px;
+    border: 0;
+  }
+
+  .navigation__site {
+    order: 1;
+  }
 }
