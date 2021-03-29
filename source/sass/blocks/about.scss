@@ -1,5 +1,7 @@
 .about {
-  padding: 31px 30px 58px;
+  @include wrapper;
+  padding-top: 31px;
+  padding-bottom: 58px;
   color: $black;
 }
 
@@ -7,6 +9,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
   margin-bottom: 28px;
 }
 
@@ -15,10 +18,139 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  width: 100%;
 }
 
 .about__item {
-  width: 260px;
+  width: 100%;
   margin-bottom: 32px;
+  padding-top: 53px;
+  position: relative;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--materials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/ svg/flower.svg");
+  }
+
+  &--style::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/ svg/money.svg");
+  }
+
+  &--likes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/ svg/heart.svg");
+  }
+
+  &--knit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/ svg/ball.svg");
+  }
+
+  &--manufacture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/ svg/rocket.svg");
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/ svg/gift.svg");
+  }
 }
 
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 82px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    font-weight: 50px;
+    margin-bottom: 41.5px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    margin-bottom: 53px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--materials {
+      order: 1;
+    }
+
+    &--style {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+      margin-bottom: 0;
+    }
+
+    &--knit {
+      order: 2;
+    }
+
+    &--manufacture {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 68px;
+    padding-bottom: 90px;
+    padding-left: 225px;
+  }
+
+  .about__list {
+    width: 700px;
+  }
+}

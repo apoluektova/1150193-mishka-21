@@ -1,6 +1,12 @@
 .lead {
+  @include wrapper;
   width: 100%;
-  padding: 73px 31px 120px;
+  padding-top: 73px;
+  padding-bottom: 120px;
+  background-image: url("../img/hero-mobile@2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $light-grey;
 }
 
 .lead__text {
@@ -12,4 +18,33 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .lead {
+    width: 100%;
+    padding-top: 109px;
+    padding-bottom: 372px;
+    background-image: url("../img/hero-tablet.jpg");
+  }
+
+  .lead__text {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .lead {
+    padding-top: 114px;
+    padding-bottom: 355px;
+    background-image: url("../img/hero-desktop.jpg");
+  }
+
+  .lead__text {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

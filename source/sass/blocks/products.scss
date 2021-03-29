@@ -1,0 +1,129 @@
+.products {
+  width: 100%;
+  color: $white;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.products__list {
+  @include no-list;
+}
+
+.products__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 24px 100px 31px 30px;
+  min-height: 103px;
+
+  &--interior {
+    background-color: $light-green;
+
+    &::after {
+      content: "";
+      width: 40px;
+      height: 62px;
+      position: absolute;
+      top: 23px;
+      right: 36px;
+      background-image: url("../img/ svg/interior.svg");
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: $light-green-hover;
+      padding-bottom: 36px;
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &--toys {
+    background-color: $medium-green;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 21px;
+      right: 27px;
+      background-image: url("../img/ svg/toy.svg");
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: $medium-green-hover;
+      padding-bottom: 36px;
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    @include wrapper;
+    background-color: $very-light-grey;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/ svg/waves-tablet.svg");
+    }
+  }
+
+  .products__list {
+    display: flex;
+    width: 100%;
+  }
+
+  .products__item {
+    width: 50%;
+  }
+
+  .products__link {
+    padding: 25px 105px 46px 36px;
+
+    &--interior {
+      &::after {
+        top: 30px;
+        right: 36px;
+      }
+
+      &:hover {
+        padding-bottom: 51px;
+      }
+    }
+
+    &--toys {
+      &::after {
+        top: 31px;
+        right: 33px;
+      }
+
+      &:hover {
+        padding-bottom: 51px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    &::after {
+      background-image: url("../img/ svg/waves-desktop.svg");
+    }
+  }
+}
