@@ -122,3 +122,35 @@
     height: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .catalog__item {
+    width: 316px;
+    margin-right: 51px;
+    flex-direction: column;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__photo {
+    width: 316px;
+    height: auto;
+    display: block;
+  }
+
+  .catalog__description-wrapper {
+    width: 316px;
+  }
+
+  .catalog__wrapper {
+    min-height: 97.5px;
+  }
+}
