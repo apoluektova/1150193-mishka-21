@@ -1,6 +1,8 @@
 .catalog {
+  @include wrapper;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
-  padding: 30px;
 }
 
 .catalog__list {
@@ -18,18 +20,19 @@
 .catalog__description-wrapper {
   border: 1px solid $light-grey;
   border-top: none;
-  width: 260px;
-  padding: 27.5px 5px 26.5px 28px;
+  width: 100%;
+  padding: 27.5px 27px 26.5px 28px;
 }
 
-.catalog__photo {
-  display: block;
+.catalog__wrapper {
+  padding-bottom: 17.5px;
 }
 
 .catalog__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  margin: 0;
   margin-bottom: 6px;
 }
 
@@ -39,8 +42,115 @@
   margin-bottom: 41px;
 }
 
+.catalog__price-wrapper {
+  padding-top: 22.5px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 204px;
+    height: 1px;
+    background-color: $light-grey;
+  }
+}
+
 .catalog__price {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
+}
+
+.catalog__button {
+  @include no-button;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 67px;
+    padding-bottom: 53px;
+  }
+
+  .catalog__item {
+    display: flex;
+    align-content: stretch;
+  }
+
+  .catalog__photo {
+    width: 334px;
+    height: 334px;
+  }
+
+  .catalog__description-wrapper {
+    width: 335px;
+    padding: 27px 32px 25px 34px;
+    border-top: 1px solid $light-grey;
+    max-height: 334px;
+  }
+
+  .catalog__wrapper {
+    padding: 0;
+    min-height: 234px;
+  }
+
+  .catalog__price-wrapper {
+    padding-top: 23px;
+
+    &::before {
+      width: 268px;
+    }
+  }
+
+  .catalog__title {
+    font-size: 20px;
+  }
+
+  .catalog__description {
+    font-size: 15px;
+  }
+
+  .catalog__price {
+    font-size: 17px;
+  }
+
+  .catalog__basket {
+    width: 21px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .catalog__item {
+    width: 316px;
+    margin-right: 51px;
+    flex-direction: column;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__photo {
+    width: 316px;
+    height: auto;
+    display: block;
+  }
+
+  .catalog__description-wrapper {
+    width: 316px;
+  }
+
+  .catalog__wrapper {
+    min-height: 97.5px;
+  }
 }

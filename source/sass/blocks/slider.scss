@@ -1,0 +1,129 @@
+.slider__list {
+  @include no-list;
+  margin-bottom: 30px;
+}
+
+.slider__quote {
+  margin: 0;
+}
+
+.slider__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 33px;
+}
+
+.slider__author {
+  color: $black;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-style: normal;
+  display: block;
+}
+
+.slider__author-instagram {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.slider__toggles {
+  margin-bottom: 38px;
+  width: 260px;
+  border: 1px solid $light-grey;
+  display: flex;
+}
+
+.slider__toggle {
+  @include no-button;
+  padding: 13px 42px 13px 37px;
+  min-height: 52px;
+
+  &--back {
+    width: 129px;
+    border-right: 1px solid $light-grey;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 26px;
+      top: 13px;
+      left: 38px;
+      background-image: url("../img/ svg/arrow-left.svg");
+    }
+  }
+
+  &--forward {
+    width: 130px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 26px;
+      top: 13px;
+      left: 38px;
+      background-image: url("../img/ svg/arrow-left.svg");
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__text {
+    font-size: 17px;
+    text-shadow: rgba($white, 0.75) 0 0 2px;
+  }
+
+  .slider__author {
+    font-size: 18px;
+  }
+
+  .slider__author-instagram {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .slider__list {
+    margin-bottom: 0;
+  }
+
+  .slider__toggles {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 174px;
+  }
+
+  .slider__toggle {
+    padding-left: 18.5;
+    padding-right: 18.5px;
+    width: 50%;
+
+    &--back {
+      border-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__author {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .slider__author-instagram {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

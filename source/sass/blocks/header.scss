@@ -1,10 +1,22 @@
-.header {
-  width: 100%;
-  padding: 22px 31px;
-  display: flex;
+.header__delivery {
+  display: none;
 }
 
-.header__logo {
-  margin: 0 auto;
-  margin-right: 67px;
+@media (min-width: $tablet-width) {
+  .header {
+    // padding: 0;
+  }
+
+  .header__delivery {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: $dark-brown;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    margin: 0 auto;
+  }
 }

@@ -1,6 +1,21 @@
+.copyright {
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copyright__text {
   color: $black;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+  display: block;
+  margin-right: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 0;
+  }
 }

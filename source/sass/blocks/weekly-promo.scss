@@ -1,6 +1,19 @@
 .weekly-promo {
+  @include wrapper;
   width: 100%;
-  padding: 31px 30px 36px;
+  padding-top: 31px;
+  padding-bottom: 42px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/ svg/zigzag-mobile.svg");
+  }
 }
 
 .weekly-promo__title {
@@ -9,26 +22,34 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
-}
+  margin-bottom: 41px;
+  position: relative;
 
-.weekly-promo__text {
-  color: $light-green;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  margin-bottom: 17.5px;
+  &::before {
+    content: "Товар недели";
+    text-transform: uppercase;
+    color: $light-green;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    position: absolute;
+    top: 33.5px;
+    left: 0;
+    width: auto;
+    height: auto;
+  }
 }
 
 .weekly-promo__description {
   font-size: 15px;
-  width: 260px;
+  margin: 0;
 }
 
 .weekly-promo__table {
   margin-bottom: 28px;
 }
 
-.weekly-promo__image-wrapper {
+.weekly-promo__image {
   margin-bottom: 25.5px;
 }
 
@@ -37,7 +58,7 @@
   font-weight: 700;
   text-align: center;
   display: block;
-  width: 154px;
+  margin: 0 auto;
   margin-bottom: 24.5px;
 }
 
@@ -46,4 +67,104 @@
   @include white-button;
   padding: 16px 70px;
   width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-promo {
+    padding-top: 39.5px;
+    padding-bottom: 69px;
+
+    &::after {
+      height: 17px;
+      background-image: url("../img/ svg/zigzag-tablet.svg");
+    }
+  }
+
+  .weekly-promo__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 37.5px;
+
+    &::before {
+      line-height: 17px;
+      text-align: center;
+      left: 555px;
+      top: 2px;
+      width: 100px;
+    }
+  }
+
+  .weekly-promo__description {
+    font-size: 17px;
+    line-height: 30px;
+    width: 292px;
+    margin-bottom: 48px;
+  }
+
+  .weekly-promo__table {
+    margin-bottom: 57px;
+  }
+
+  .weekly-promo__image {
+    float: right;
+    width: 334px;
+    margin-top: -290px;
+    margin-bottom: 0;
+  }
+
+  .weekly-promo__price {
+    width: 292px;
+    margin: 0;
+    margin-bottom: 33px;
+  }
+
+  .weekly-promo__button {
+    font-size: 17px;
+    padding: 16px 86px;
+    width: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekly-promo {
+    padding-top: 115px;
+    padding-bottom: 96px;
+    margin-left: 175px;
+
+    &::after {
+      height: 23px;
+      background-image: url("../img/ svg/zigzag-desktop.svg");
+    }
+  }
+
+  .weekly-promo__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      left: -143px;
+      top: 5px;
+    }
+  }
+
+  .weekly-promo__description {
+    margin-bottom: 60px;
+  }
+
+  .weekly-promo__table {
+    margin-bottom: 109px;
+  }
+
+  .weekly-promo__price {
+    font-size: 20px;
+  }
+
+  .weekly-promo__image {
+    width: 525px;
+    margin-top: -525px;
+    margin-right: 173px;
+  }
 }

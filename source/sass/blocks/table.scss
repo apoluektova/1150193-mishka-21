@@ -1,4 +1,10 @@
 .table {
   font-size: 15px;
   line-height: 20px;
+  border-collapse: collapse;
+}
+
+.table__cell {
+  padding: 10px 28px 10px 0;
+  border-bottom: 1px solid $light-grey;
 }
