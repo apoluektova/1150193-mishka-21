@@ -1,10 +1,7 @@
 .map {
   margin-bottom: 42px;
   width: 320px;
-}
-
-.map__image {
-  width: 320px;
+  height: 454px;
   margin-left: -30px;
 }
 
@@ -12,10 +9,6 @@
   .map {
     width: 768px;
     margin-bottom: 55px;
-  }
-
-  .map__image {
-    width: 768px;
     margin-left: -50px;
   }
 }
@@ -23,10 +16,5 @@
 @media (min-width: $desktop-width) {
   .map {
     margin-bottom: 0;
-  }
-
-  .map__image {
-    width: 527px;
-    margin-left: 0;
   }
 }

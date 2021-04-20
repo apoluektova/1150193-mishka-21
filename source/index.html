@@ -251,13 +251,8 @@
               <span class="contacts-list__text">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</span>
             </li>
           </ul>
-        <div class="contacts__map map">
+        <div id="map" class="contacts__map map">
           <h2 class="visually-hidden">Карта</h2>
-          <picture>
-            <source media="(min-width:1150px)" srcset="img/map-desktop.jpg">
-            <source media="(min-width:768px)" srcset="img/map-tablet.jpg">
-            <img class="map__image" src="img/map-mobile.jpg" width="320" height="455" alt="Офис компании находится по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-          </picture>
         </div>
         </div>
         <button class="contacts__button" type="button">Напишите нам</button>
@@ -302,5 +297,8 @@
         </a>
       </div>
     </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bd459fa7-828a-456a-9498-5e3d327a5751&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
