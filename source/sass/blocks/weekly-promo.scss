@@ -129,7 +129,6 @@
   .weekly-promo {
     padding-top: 115px;
     padding-bottom: 96px;
-    margin-left: 175px;
 
     &::after {
       height: 23px;
@@ -141,6 +140,7 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 35px;
+    margin-left: 225px;
     position: relative;
     z-index: 2;
 
@@ -148,6 +148,10 @@
       left: -143px;
       top: 5px;
     }
+  }
+
+  .weekly-promo__wrapper {
+    margin-left: 225px;
   }
 
   .weekly-promo__description {
@@ -165,6 +169,6 @@
   .weekly-promo__image {
     width: 525px;
     margin-top: -525px;
-    margin-right: 173px;
+    // margin-right: 173px;
   }
 }

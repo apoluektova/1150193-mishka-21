@@ -54,6 +54,26 @@
 
 @media (min-width: $desktop-width) {
   .contacts-list {
+    flex-direction: column;
+    width: 331px;
+    margin-bottom: 77px;
+  }
+
+  .contacts-list__item {
+    width: 100%;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts-list__text {
     display: block;
+    width: 245px;
+
+    &--left {
+      width: 82px;
+    }
   }
 }
