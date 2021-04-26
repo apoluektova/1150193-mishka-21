@@ -1,7 +1,11 @@
 .contacts {
-  @include wrapper;
+  // @include wrapper;
   padding-top: 38px;
   padding-bottom: 39px;
+}
+
+.contacts__wrapper {
+  @include wrapper;
 }
 
 .contacts__title {
@@ -14,14 +18,17 @@
 
 .contacts__map {
   padding: 0;
-  width: 320px;
+  //width: 320px;
 }
 
 .contacts__button {
   @include no-button;
   @include white-button;
+  display: block;
   padding: 16px 38px;
-  width: 100%;
+  width: 260px;
+  margin: 0 auto;
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,10 +56,8 @@
 
   .contacts__button {
     width: 230px;
-    display: block;
     font-size: 17px;
     padding: 16px 28px 16px 26px;
-    margin: 0 auto;
   }
 }
 

@@ -4,7 +4,9 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    // padding: 0;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -45.5px;
   }
 
   .header__delivery {
@@ -18,5 +20,6 @@
 @media (min-width: $desktop-width) {
   .header {
     margin: 0 auto;
+    margin-bottom: -45.5px;
   }
 }

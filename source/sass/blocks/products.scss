@@ -38,6 +38,14 @@
         opacity: 0.7;
       }
     }
+
+    &:active {
+      background-color: $light-green-hover;
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--toys {
@@ -60,6 +68,14 @@
 
       &::after {
         opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: $medium-green-hover;
+
+      &::after {
+        opacity: 0.3;
       }
     }
   }
@@ -123,7 +139,7 @@
 @media (min-width: $desktop-width) {
   .products {
     &::after {
-      background-image: url("../img/ svg/waves-desktop.svg");
+      display: none;
     }
   }
 }
