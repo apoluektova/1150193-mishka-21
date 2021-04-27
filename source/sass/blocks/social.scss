@@ -15,6 +15,18 @@
   }
 }
 
+.social__link {
+  color: $icon-black;
+
+  &:hover {
+    color: $medium-green-hover;
+  }
+
+  &:active {
+    color: rgba($medium-green-hover, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social {
     margin-bottom: 0;

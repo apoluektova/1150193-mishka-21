@@ -34,6 +34,15 @@
 
   .footer__link {
     display: block;
+    color: $black;
+
+    &:hover {
+      color: $medium-green-hover;
+    }
+
+    &:active {
+      color: rgba($medium-green-hover, 0.3);
+    }
   }
 
   .footer__copyright {
