@@ -78,7 +78,7 @@
     </svg>
 
     <header class="header">
-      <nav class="header__navigation navigation">
+      <nav class="header__navigation navigation navigation--opened navigation--nojs">
         <div class="navigation__wrapper navigation__wrapper--site">
           <div class="navigation__wrapper-desktop">
             <div class="navigation__wrapper-logo">
@@ -90,6 +90,9 @@
               <button class="navigation__toggle" type="button" aria-label="Открыть/закрыть меню">
                 <svg class="navigation__menu" width="20" height="14">
                   <use xlink:href="#menu"></use>
+                </svg>
+                <svg class="navigation__close" width="21" height="20">
+                  <use xlink:href="#menu-close"></use>
                 </svg>
               </button>
             </div>
@@ -293,5 +296,6 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=bd459fa7-828a-456a-9498-5e3d327a5751&lang=ru_RU" type="text/javascript"></script>
     <script src="js/map.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

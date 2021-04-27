@@ -5,6 +5,7 @@
   padding-bottom: 22px;
   border-bottom: 1px solid $light-grey;
   position: relative;
+  min-height: 79px;
 }
 
 .navigation__logo {
@@ -33,6 +34,51 @@
 .navigation__toggle {
   @include no-button;
   margin-left: auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation__menu {
+  display: block;
+}
+
+.navigation__close {
+  display: none;
+  margin-top: 7px;
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--closed .navigation__menu {
+  display: block;
+}
+
+.navigation--closed .navigation__close {
+  display: none;
+}
+
+.navigation--closed .navigation__site {
+  display: none;
+}
+
+.navigation--closed .navigation__user {
+  display: none;
+}
+
+.navigation--opened .navigation__menu {
+  display: none;
+}
+
+.navigation--opened .navigation__close {
+  display: block;
 }
 
 .navigation__delivery {
@@ -51,6 +97,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .navigation--closed .navigation__site,
+  .navigation--closed .navigation__user {
+    display: flex;
   }
 
   .navigation__wrapper {

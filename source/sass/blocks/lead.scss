@@ -4,7 +4,7 @@
   padding-top: 73px;
   padding-bottom: 120px;
   background-image: url("../img/hero-mobile@2x.jpg");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-color: $background-grey;
 }
@@ -28,7 +28,6 @@
     background-image: url("../img/hero-tablet.jpg");
     background-position: center top;
     background-size: 768px auto;
-    // margin-top: -45.5px;
   }
 
   .lead__text {
