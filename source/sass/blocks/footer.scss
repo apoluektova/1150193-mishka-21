@@ -1,6 +1,9 @@
 .footer {
-  @include wrapper;
   background-color: $grey;
+}
+
+.footer__wrapper {
+  @include wrapper;
   padding-top: 25px;
   padding-bottom: 23px;
 }
@@ -25,6 +28,10 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    width: 100%;
+  }
+
+  .footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
