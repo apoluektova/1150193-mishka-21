@@ -18,7 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .lead-inner {
-    padding-top: 56.5px;
+    padding-top: 100px;
     padding-bottom: 87px;
     position: relative;
 
@@ -36,5 +36,11 @@
   .lead-inner__text {
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .lead-inner:after {
+    display: none;
   }
 }

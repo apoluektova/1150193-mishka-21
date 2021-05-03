@@ -91,7 +91,7 @@
         <div class="navigation__wrapper navigation__wrapper--site">
           <div class="navigation__wrapper-desktop">
             <div class="navigation__wrapper-logo">
-              <a class="navigation__logo" aria-label="Логотип магазина Мишка">
+              <a class="navigation__logo" aria-label="Логотип магазина Мишка" href="index.html">
                 <svg class="navigation__logo navigation__logo--mobile" width="86" height="35"><use xlink:href="#mishka-logo-mobile"></use></svg>
                 <svg class="navigation__logo navigation__logo--tablet" width="113" height="46"><use xlink:href="#mishka-logo-tablet"></use></svg>
                 <svg class="navigation__logo navigation__logo--desktop" width="149" height="72"><use xlink:href="#mishka-logo-desktop"></use></svg>
@@ -149,21 +149,25 @@
 
     <main class="main">
       <h1 class="visually-hidden">Каталог товаров</h1>
-      <div class="lead-inner">
-        <span class="lead-inner__text">Каталог товаров</span>
+      <div class="main__wrapper main__wrapper--inner">
+        <div class="lead-inner">
+          <span class="lead-inner__text">Каталог товаров</span>
+        </div>
       </div>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <picture>
-              <source media="(min-width:1150px)" srcset="img/rabbit-desktop.jpg">
-              <source media="(min-width:768px)" srcset="img/rabbit-tablet.jpg">
-              <img class="catalog__photo" src="img/rabbit-mobile.jpg" width="260" height="195" alt="Вязаный зайчик">
-            </picture>
+            <a class="catalog__photo-link" href="">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/rabbit-desktop.jpg">
+                <source media="(min-width:768px)" srcset="img/rabbit-tablet.jpg">
+                <img class="catalog__photo" src="img/rabbit-mobile.jpg" width="260" height="195" alt="Вязаный зайчик">
+              </picture>
+            </a>
             <div class="catalog__description-wrapper">
               <div class="catalog__wrapper">
-                <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+                <a class="catalog__title" href="">Зайчик-попрыгайчик</a>
                 <span class="catalog__description">Рост 30 см, вес 200 г</span>
               </div>
               <div class="catalog__price-wrapper">
@@ -177,14 +181,16 @@
             </div>
           </li>
           <li class="catalog__item">
-            <picture>
-              <source media="(min-width:1150px)" srcset="img/basket-desktop.jpg">
-              <source media="(min-width:768px)" srcset="img/basket-tablet.jpg">
-              <img class="catalog__photo" src="img/basket-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
-            </picture>
+            <a class="catalog__photo-link" href="">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/basket-desktop.jpg">
+                <source media="(min-width:768px)" srcset="img/basket-tablet.jpg">
+                <img class="catalog__photo" src="img/basket-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
+              </picture>
+            </a>
             <div class="catalog__description-wrapper">
               <div class="catalog__wrapper">
-                <h3 class="catalog__title">Корзинка для белья</h3>
+                <a class="catalog__title" href="">Корзинка для белья</a>
                 <span class="catalog__description">Диаметр 15 см, высота 10 см</span>
               </div>
               <div class="catalog__price-wrapper">
@@ -198,14 +204,16 @@
           </div>
           </li>
           <li class="catalog__item">
-            <picture>
-              <source media="(min-width:1150px)" srcset="img/toys-desktop.jpg">
-              <source media="(min-width:768px)" srcset="img/toys-tablet.jpg">
-              <img class="catalog__photo" src="img/toys-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
-            </picture>
+            <a class="catalog__photo-link" href="">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/toys-desktop.jpg">
+                <source media="(min-width:768px)" srcset="img/toys-tablet.jpg">
+                <img class="catalog__photo" src="img/toys-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
+              </picture>
+            </a>
             <div class="catalog__description-wrapper">
               <div class="catalog__wrapper">
-                <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+                <a class="catalog__title" href="">Большая корзинка для игрушек</a>
                 <span class="catalog__description">Диаметр 30 см, высота 30 см</span>
               </div>
               <div class="catalog__price-wrapper">
@@ -224,6 +232,11 @@
         <div class="process__wrapper">
           <h2 class="process__title">Процесс производства</h2>
           <div class="process__video">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/video-desktop.jpg">
+              <source media="(min-width:768px" srcset="img/video-tablet.jpg">
+              <img class="process__video-poster" src="img/video-mobile.jpg" width="260" height="150" alt="Превью процесса производства">
+            </picture>
             <button class="process__play-button" type="button"></button>
           </div>
           <p class="process__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>

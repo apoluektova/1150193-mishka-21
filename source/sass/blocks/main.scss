@@ -1,6 +1,10 @@
 .main__wrapper {
   width: 100%;
   background-color: $background-grey;
+
+  &--inner {
+    background-color: $grey;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -16,7 +20,7 @@
       left: 0;
       background-image: url("../img/ svg/waves-desktop.svg");
       background-position: center;
-      background-repeat: repeat-x;
+      //background-repeat: repeat-x;
     }
   }
 }
