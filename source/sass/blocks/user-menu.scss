@@ -90,6 +90,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-menu {
+    border-bottom: none;
+  }
+
   .user-menu__item {
     &--search {
       padding-top: 32px;

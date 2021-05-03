@@ -175,7 +175,7 @@
 
   .navigation__wrapper-desktop {
     display: flex;
-    border-bottom: 1px solid $light-grey;
+    //border-bottom: 1px solid $light-grey;
     border-right: 1px solid $light-grey;
   }
 
@@ -201,5 +201,9 @@
 
   .navigation__user {
     margin-left: auto;
+  }
+
+  .navigation__delivery {
+    padding-right: 32px;
   }
 }
