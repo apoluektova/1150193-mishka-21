@@ -3,14 +3,20 @@
 }
 
 .user-menu__item {
-  padding: 27.5px 30px;
+  padding: 27px 30px 26px 30px;
   text-align: left;
   border-bottom: 1px solid $light-grey;
   cursor: pointer;
 }
 
+.user-menu__link {
+  display: flex;
+  justify-content: flex-start
+}
+
 .user-menu__icon {
-  margin-right: 25px;
+  margin-right: 26px;
+  margin-top: 2px;
   opacity: 0.2;
 
   &:hover {
@@ -33,6 +39,7 @@
 }
 
 .user-menu__text {
+  display: block;
   color: $black;
 
   &:hover {
