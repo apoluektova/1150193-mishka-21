@@ -50,7 +50,6 @@
 
 .form__item {
   margin-bottom: 11px;
-  //min-height: 42px;
 
   &:last-child {
     margin-bottom: 0;
@@ -66,6 +65,10 @@
   position: relative;
   display: block;
   cursor: pointer;
+
+  &--radio {
+    padding: 3px 0 3px 61px;
+  }
 
   &--radio::before {
     content: "";
@@ -105,7 +108,7 @@
 }
 
 .form__button--radio:hover + .form__label--radio::before,
-.form__button--radio:focus + .from__button--radio::before {
+.form__button--radio:focus + .from__label--radio::before {
   border-color: $tiffany;
 }
 
@@ -122,6 +125,12 @@
   top: 5px;
   left: 8px;
 }
+
+.form__button--checkbox:not(:hover) + .form__label--checkbox::before,
+.form__button--checkbox:not(:active) + .form__label--checkbox::before {
+  border-color: $dark-brown;
+}
+
 
 .form__button--checkbox:hover + .form__label--checkbox::before,
 .form__button--checkbox:focus + .form__label--checkbox::before {
@@ -150,7 +159,7 @@
 
 .form__input {
   @include placeholder;
-  width: 260px;
+  width: 100%;
   padding: 17px 9px 17px 0;
   border: none;
   border-bottom: 2px solid $black;
@@ -361,7 +370,16 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 98.5px 0 50px;
+    padding: 0;
+    padding-top: 98.5px;
+    padding-bottom: 50px;
+    margin: 0;
+    max-width: none;
+  }
+
+  .form__section-wrapper {
+    background-color: $grey;
+    width: 100%;
   }
 
   .form__text {
@@ -371,6 +389,8 @@
 
   .form__type {
     padding: 0 97px 49px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .form__title {
@@ -380,11 +400,15 @@
   .form__color {
     padding-left: 97px;
     padding-right: 96px;
+    margin: 0 auto;
+    max-width: 1150px;
   }
 
   .form__name {
     padding-left: 97px;
     padding-right: 225px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .form__list {
@@ -406,6 +430,8 @@
   .form__extra {
     padding-left: 97px;
     padding-right: 225px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .form__phone-wrapper,

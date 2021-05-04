@@ -3,13 +3,21 @@
 }
 
 .site-menu__item {
-  padding: 27.5px 30px;
-  text-align: center;
+  padding: 27.5px 30px 27.5px 76px;
+  text-align: left;
   border-bottom: 1px solid $light-grey;
 }
 
 .site-menu__link {
   color: $black;
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +27,7 @@
     font-weight: 700;
     display: flex;
     padding: 21.5px 10px 0 48px;
-    background-color: $grey;
+    flex-wrap: wrap;
   }
 
   .site-menu__item {
@@ -44,6 +52,7 @@
     padding: 0;
     padding-left: 15px;
     background-color: $white;
+    border-bottom: 1px solid $light-grey;
   }
 
   .site-menu__item {

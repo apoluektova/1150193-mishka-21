@@ -7,21 +7,44 @@
 
 .catalog__list {
   @include no-list;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 }
 
 .catalog__item {
   margin-bottom: 30px;
+  // width: 260px;
+  width: 100%;
+  border: 1px solid $light-grey;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.catalog__photo-link {
+  display: block;
+}
+
+.catalog__photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
 .catalog__description-wrapper {
-  border: 1px solid $light-grey;
-  border-top: none;
   width: 100%;
   padding: 27.5px 27px 26.5px 28px;
+}
+
+.catalog__item:hover .catalog__description-wrapper {
+  box-shadow: 0 6px 10px rgba($black, 0.1);
+}
+
+.catalog__item:active .catalog__description-wrapper {
+  box-shadow: 0 3px 5px rgba($black, 0.1);
 }
 
 .catalog__wrapper {
@@ -34,6 +57,16 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 6px;
+  color: $black;
+  display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__description {
@@ -53,7 +86,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 204px;
+    width: 100%;
     height: 1px;
     background-color: $light-grey;
   }
@@ -67,6 +100,15 @@
 
 .catalog__button {
   @include no-button;
+  color: rgba($black, 0.2);
+
+  &:hover {
+    color: $light-green;
+  }
+
+  &:active {
+    color: rgba($light-green, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -81,15 +123,15 @@
   }
 
   .catalog__photo {
-    width: 334px;
-    height: 334px;
+    min-width: 334px;
+    min-height: 334px;
   }
 
   .catalog__description-wrapper {
-    width: 335px;
     padding: 27px 32px 25px 34px;
     border-top: 1px solid $light-grey;
     max-height: 334px;
+    width: 50%;
   }
 
   .catalog__wrapper {
@@ -99,10 +141,6 @@
 
   .catalog__price-wrapper {
     padding-top: 23px;
-
-    &::before {
-      width: 268px;
-    }
   }
 
   .catalog__title {
@@ -127,7 +165,7 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
   .catalog__item {
@@ -140,14 +178,17 @@
     }
   }
 
+  // .catalog__photo-link {
+  //   width: 316px;
+  // }
+
   .catalog__photo {
-    width: 316px;
-    height: auto;
-    display: block;
+    min-width: 316px;
+    min-height: 462px;
   }
 
   .catalog__description-wrapper {
-    width: 316px;
+    width: 100%;
   }
 
   .catalog__wrapper {

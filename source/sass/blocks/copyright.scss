@@ -14,6 +14,18 @@
   margin-right: 27px;
 }
 
+.copyright__link {
+  color: $light-green;
+
+  &:hover {
+    color: $medium-green-hover;
+  }
+
+  &:active {
+    color: rgba($medium-green-hover, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     padding-top: 0;

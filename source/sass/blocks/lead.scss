@@ -4,9 +4,9 @@
   padding-top: 73px;
   padding-bottom: 120px;
   background-image: url("../img/hero-mobile@2x.jpg");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-color: $light-grey;
+  background-color: $background-grey;
 }
 
 .lead__text {
@@ -23,9 +23,11 @@
 @media (min-width: $tablet-width) {
   .lead {
     width: 100%;
-    padding-top: 109px;
+    padding-top: 154.5px;
     padding-bottom: 372px;
     background-image: url("../img/hero-tablet.jpg");
+    background-position: center top;
+    background-size: 768px auto;
   }
 
   .lead__text {
@@ -37,9 +39,12 @@
 
 @media (min-width: $desktop-width) {
   .lead {
-    padding-top: 114px;
+    padding-top: 164px;
     padding-bottom: 355px;
     background-image: url("../img/hero-desktop.jpg");
+    background-position: center top;
+    background-size: 1150px auto;
+    margin-top: 0;
   }
 
   .lead__text {
