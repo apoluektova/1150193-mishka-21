@@ -9,10 +9,8 @@
 }
 
 .process__title {
-  padding-left: 89px;
-  padding-right: 32px;
   margin: 0;
-  margin-bottom: 26.5px;
+  padding: 0 32px 26.5px 89px;
   position: relative;
   font-size: 17px;
 
@@ -21,7 +19,9 @@
     position: absolute;
     width: 32px;
     height: 22px;
-    top: 13.5px;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
     left: 32px;
     background-image: url("/img/ svg/video.svg");
   }

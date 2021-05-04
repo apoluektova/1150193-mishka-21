@@ -91,7 +91,7 @@
         <div class="navigation__wrapper navigation__wrapper--site">
           <div class="navigation__wrapper-desktop">
             <div class="navigation__wrapper-logo">
-              <a class="navigation__logo" aria-label="Логотип магазина Мишка">
+              <a class="navigation__logo" aria-label="Логотип магазина Мишка" href="index.html">
                 <svg class="navigation__logo navigation__logo--mobile" width="86" height="35"><use xlink:href="#mishka-logo-mobile"></use></svg>
                 <svg class="navigation__logo navigation__logo--tablet" width="113" height="46"><use xlink:href="#mishka-logo-tablet"></use></svg>
                 <svg class="navigation__logo navigation__logo--desktop" width="149" height="72"><use xlink:href="#mishka-logo-desktop"></use></svg>
@@ -156,7 +156,7 @@
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <div class="form__type">
+        <section class="form__type">
           <h2 class="form__title">Тип</h2>
           <ul class="form__list form__list--radio">
             <li class="form__item form__item--radio">
@@ -168,37 +168,39 @@
               <label class="form__label form__label--radio" for="toy">Детская игрушка</label>
             </li>
           </ul>
+        </section>
+        <div class="form__section-wrapper">
+          <section class="form__color">
+            <h2 class="form__title">Цвет</h2>
+            <ul class="form__list form__list--checkbox">
+              <li class="form__item form__item--checkbox">
+                <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="white" id="white" checked>
+                <label class="form__label form__label--checkbox" for="white">Белый</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="grey" id="grey" checked>
+                <label class="form__label form__label--checkbox" for="grey">Серый</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="tiffany" id="tiffany">
+                <label class="form__label form__label--checkbox" for="tiffany">"Тиффани"</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="black" id="black">
+                <label class="form__label form__label--checkbox" for="black">Черный</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="pink" id="pink">
+                <label class="form__label form__label--checkbox" for="pink">Розовый</label>
+              </li>
+              <li class="form__item form__item--checkbox">
+                <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="orange" id="orange">
+                <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </section>
         </div>
-        <div class="form__color">
-          <h2 class="form__title">Цвет</h2>
-          <ul class="form__list form__list--checkbox">
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="white" id="white" checked>
-              <label class="form__label form__label--checkbox" for="white">Белый</label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="grey" id="grey" checked>
-              <label class="form__label form__label--checkbox" for="grey">Серый</label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="tiffany" id="tiffany">
-              <label class="form__label form__label--checkbox" for="tiffany">"Тиффани"</label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="black" id="black">
-              <label class="form__label form__label--checkbox" for="black">Черный</label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="pink" id="pink">
-              <label class="form__label form__label--checkbox" for="pink">Розовый</label>
-            </li>
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__button form__button--checkbox" type="checkbox" name="orange" id="orange">
-              <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
-            </li>
-          </ul>
-        </div>
-        <div class="form__name">
+        <section class="form__name">
           <h2 class="form__title">ФИО</h2>
           <ul class="form__list form__list--name">
             <li class="form__item form__item--name">
@@ -214,29 +216,31 @@
               <input class="form__input" type="text" name="patronymic-name" id="patronymic-name" placeholder="Отчество, если желаете">
             </li>
           </ul>
+        </section>
+        <div class="form__section-wrapper">
+          <section class="form__phone">
+            <h2 class="form__title form__title--tel">ТЕЛ</h2>
+            <div class="form__phone-wrapper">
+              <input class="form__input form__input--contacts" type="text" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <svg class="form__phone-image" width="25" height="24" role="img">
+                <use xlink:href="#phone"></use>
+              </svg>
+            </div>
+          </section>
+          <section class="form__email">
+            <h2 class="form__title form__title--email">E-MAIL</h2>
+            <div class="form__email-wrapper">
+              <input class="form__input form__input--contacts" type="text" name="email" id="email" placeholder="Ваш Email*" required>
+              <svg class="form__email-image" width="32" height="21" role="img">
+                <use xlink:href="#mail"></use>
+              </svg>
+            </div>
+          </section>
         </div>
-        <div class="form__phone">
-          <h2 class="form__title form__title--tel">ТЕЛ</h2>
-          <div class="form__phone-wrapper">
-            <input class="form__input form__input--contacts" type="text" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            <svg class="form__phone-image" width="25" height="24" role="img">
-              <use xlink:href="#phone"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="form__email">
-          <h2 class="form__title form__title--email">E-MAIL</h2>
-          <div class="form__email-wrapper">
-            <input class="form__input form__input--contacts" type="text" name="email" id="email" placeholder="Ваш Email*" required>
-            <svg class="form__email-image" width="32" height="21" role="img">
-              <use xlink:href="#mail"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="form__extra">
+        <section class="form__extra">
           <h2 class="form__title form__title--extra">ДОП</h2>
           <textarea class="form__textarea" id="extra" name="extra">Опишите все ваши пожелания к заказу</textarea>
-        </div>
+        </section>
         <div class="form__submit-wrapper">
           <small class="form__asterisk">* Поля обязательны для заполнения</small>
           <button class="form__submit-button" type="submit">Отправить заказ</button>
