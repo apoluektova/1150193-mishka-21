@@ -21,6 +21,7 @@
   line-height: 24px;
   font-style: normal;
   display: block;
+  margin-bottom: 5px;
 }
 
 .slider__author-instagram {
@@ -38,7 +39,7 @@
 .slider__toggle {
   @include no-button;
   padding: 13px 42px 13px 37px;
-  min-height: 52px;
+  min-height: 49px;
 
   &--back {
     width: 129px;
@@ -50,8 +51,8 @@
       position: absolute;
       width: 50px;
       height: 26px;
-      top: 13px;
-      left: 38px;
+      top: 10px;
+      left: 37px;
       background-image: url("../img/ svg/arrow-left.svg");
     }
   }
@@ -65,8 +66,8 @@
       position: absolute;
       width: 50px;
       height: 26px;
-      top: 13px;
-      left: 38px;
+      top: 10px;
+      left: 37px;
       background-image: url("../img/ svg/arrow-left.svg");
       transform: rotate(180deg);
     }

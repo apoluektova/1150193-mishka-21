@@ -4,13 +4,13 @@
   padding-top: 73px;
   padding-bottom: 120px;
   background-image: url("../img/hero-mobile@2x.jpg");
-  background-position: center top;
+  background-position: center top -17px;
   background-repeat: no-repeat;
   background-color: $background-grey;
 }
 
 .lead__text {
-  width: 260px;
+  width: 100%;
   display: block;
   margin: 0 auto;
   color: $black;

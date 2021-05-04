@@ -43,6 +43,7 @@
 .weekly-promo__description {
   font-size: 15px;
   margin: 0;
+  margin-bottom: 18px;
 }
 
 .weekly-promo__table {
@@ -50,7 +51,7 @@
 }
 
 .weekly-promo__image {
-  margin-bottom: 25.5px;
+  margin-bottom: 19px;
 }
 
 .weekly-promo__price {
@@ -65,7 +66,7 @@
 .weekly-promo__button {
   @include no-button;
   @include white-button;
-  padding: 16px 70px;
+  padding: 13px 16px 15px 16px;
   width: 260px;
 }
 

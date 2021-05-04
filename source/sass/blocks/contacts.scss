@@ -18,14 +18,13 @@
 
 .contacts__map {
   padding: 0;
-  //width: 320px;
 }
 
 .contacts__button {
   @include no-button;
   @include white-button;
   display: block;
-  padding: 16px 38px;
+  padding: 14px 16px 14px 16px;
   width: 260px;
   margin: 0 auto;
   outline: none;
