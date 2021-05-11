@@ -90,7 +90,7 @@
       line-height: 17px;
       text-align: center;
       left: 555px;
-      top: 2px;
+      top: 5px;
       width: 100px;
     }
   }
@@ -99,24 +99,26 @@
     font-size: 17px;
     line-height: 30px;
     width: 292px;
-    margin-bottom: 48px;
+    margin-bottom: 37px;
   }
 
   .weekly-promo__table {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 
   .weekly-promo__image {
     float: right;
     width: 334px;
-    margin-top: -310px;
+    margin-top: -296px;
     margin-bottom: 0;
   }
 
   .weekly-promo__price {
     width: 292px;
     margin: 0;
-    margin-bottom: 33px;
+    margin-left: -2px;
+    margin-bottom: 32px;
+    font-size: 20px;
   }
 
   .weekly-promo__button {

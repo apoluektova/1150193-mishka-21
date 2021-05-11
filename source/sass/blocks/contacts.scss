@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 46px;
+    padding-top: 69px;
     padding-bottom: 57px;
     position: relative;
     width: 100%;
@@ -41,7 +41,7 @@
       content: "";
       position: absolute;
       top: 46px;
-      right: 50px;
+      right: 53px;
       width: 47px;
       height: 81px;
       background-image: url("../img/ svg/flag.svg");
@@ -51,6 +51,7 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 49px;
   }
 
   .contacts__button {

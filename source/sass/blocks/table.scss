@@ -8,3 +8,10 @@
   padding: 10px 28px 10px 0;
   border-bottom: 1px solid $light-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .table__cell {
+    padding-top: 9px;
+    padding-bottom: 11px;
+  }
+}

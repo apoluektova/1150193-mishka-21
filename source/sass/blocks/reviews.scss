@@ -40,11 +40,11 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 82.5px;
-    padding-bottom: 85px;
+    padding-top: 82px;
+    padding-bottom: 132px;
     background-image: url("../img/review-background-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: left top -62.5px;
+    background-position: left top -62px;
     background-size: 350px;
     display: flex;
     flex-direction: row;
@@ -68,11 +68,13 @@
 
   .reviews__button {
     font-size: 17px;
-    padding: 16px 26px;
+    padding: 16px;
     width: 175px;
     order: 2;
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+    margin-top: -5px;
+    display: block;
   }
 }
 

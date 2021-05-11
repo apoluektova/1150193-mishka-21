@@ -93,15 +93,21 @@
   .slider__text {
     font-size: 17px;
     text-shadow: rgba($white, 0.75) 0 0 2px;
+    margin-bottom: 60px;
+  }
+
+  .slider__text br {
+    display: none;
   }
 
   .slider__author {
     font-size: 18px;
+    margin-bottom: 3px;
   }
 
   .slider__author-instagram {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .slider__list {
@@ -110,8 +116,8 @@
 
   .slider__toggles {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 19px;
+    bottom: 2px;
     margin-bottom: 0;
     border: 0;
     width: 174px;
