@@ -31,5 +31,12 @@
   .social {
     margin: 0;
     margin-right: 120px;
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-right: 312px;
   }
 }

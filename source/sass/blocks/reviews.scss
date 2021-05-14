@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     &::after {
       height: 17px;
@@ -80,13 +81,17 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 78px;
-    padding-bottom: 86px;
+    padding-top: 74px;
+    padding-bottom: 185px;
+    padding-left: 225px;
     background-image: url("../img/review-background-desktop.jpg");
+    background-position: top -3px left 50px;
 
     &::after {
       background-image: url("../img/ svg/zigzag-desktop.svg");
       height: 23px;
+      width: 1050px;
+      left: 50px;
     }
   }
 
@@ -97,6 +102,6 @@
   }
 
   .reviews__button {
-    margin-bottom: 39px;
+    margin-top: 0;
   }
 }

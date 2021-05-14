@@ -106,11 +106,19 @@
 
   .user-menu__item {
     &--search {
-      padding-top: 32px;
+      padding-top: 35px;
     }
 
     &--cart {
       padding: 32.5px 32px 31.5px 32px;
     }
+  }
+
+  .user-menu__link {
+    justify-content: flex-start;
+  }
+
+  .user-menu__icon--cart {
+    margin-right: 31px;
   }
 }
