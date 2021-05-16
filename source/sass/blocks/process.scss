@@ -1,6 +1,6 @@
 .process {
   @include wrapper;
-  margin-bottom: 58px;
+  padding-bottom: 58px;
 }
 
 .process__wrapper {
@@ -80,6 +80,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .process {
+    padding-bottom: 64px;
+  }
+
   .process__wrapper {
     display: flex;
     flex-direction: column;
@@ -89,19 +93,20 @@
   .process__video {
     order: 1;
     position: relative;
-    margin-bottom: 41px;
+    margin-bottom: 35px;
   }
 
   .process__title {
     order: 2;
     padding-top: 0;
     padding-left: 107px;
-    padding-right: 40px;
+    padding-right: 0;
     margin-bottom: 24.5px;
     font-size: 20px;
+    padding-bottom: 0;
 
     &::before {
-      top: 0;
+      top: -2px;
       left: 42px;
     }
   }
@@ -120,6 +125,7 @@
     width: 584px;
     margin: 0 auto;
     margin-bottom: 46px;
+    font-size: 17px;
   }
 }
 
