@@ -159,10 +159,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 115px;
+    padding-bottom: 0;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 5px;
   }
 
   .catalog__item {
@@ -175,10 +181,6 @@
     }
   }
 
-  // .catalog__photo-link {
-  //   width: 316px;
-  // }
-
   .catalog__photo {
     min-width: 316px;
     min-height: 462px;
@@ -186,9 +188,14 @@
 
   .catalog__description-wrapper {
     width: 100%;
+    padding-left: 28px;
   }
 
   .catalog__wrapper {
-    min-height: 97.5px;
+    min-height: 95px;
+  }
+
+  .catalog__title {
+    margin-bottom: 3px;
   }
 }

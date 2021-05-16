@@ -130,6 +130,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .process {
+    padding-bottom: 105px;
+  }
+
   .process__wrapper {
     flex-wrap: wrap;
     height: 455px;
@@ -140,10 +144,12 @@
     width: 178px;
     padding-top: 49px;
     margin-top: 47px;
+    padding-left: 21px;
+    margin-bottom: 26px;
 
     &::before {
       top: 0;
-      left: 0;
+      left: 21px;
     }
   }
 
@@ -155,10 +161,13 @@
   .process__video-description {
     width: 253px;
     padding: 0;
+    padding-left: 21px;
+    margin-bottom: 52px;
   }
 
   .process__button {
     width: 230px;
     margin: 0;
+    margin-left: 23px;
   }
 }
