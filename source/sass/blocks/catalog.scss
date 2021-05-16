@@ -7,14 +7,10 @@
 
 .catalog__list {
   @include no-list;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
 }
 
 .catalog__item {
   margin-bottom: 30px;
-  // width: 260px;
   width: 100%;
   border: 1px solid $light-grey;
 
@@ -36,7 +32,7 @@
 
 .catalog__description-wrapper {
   width: 100%;
-  padding: 27.5px 27px 26.5px 28px;
+  padding: 27.5px 27px 24px 28px;
 }
 
 .catalog__item:hover .catalog__description-wrapper {

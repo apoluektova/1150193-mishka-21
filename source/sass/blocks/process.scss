@@ -5,12 +5,13 @@
 
 .process__wrapper {
   border: 1px solid $light-grey;
-  padding: 21.5px 0 33px;
+  padding: 25px 0 33px;
+  width: 100%;
 }
 
 .process__title {
   margin: 0;
-  padding: 0 32px 26.5px 89px;
+  padding: 0 32px 24px 89px;
   position: relative;
   font-size: 17px;
 
@@ -19,7 +20,7 @@
     position: absolute;
     width: 32px;
     height: 22px;
-    top: 0;
+    top: 12px;
     margin-top: auto;
     margin-bottom: auto;
     left: 32px;
@@ -29,7 +30,7 @@
 
 .process__video {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -72,8 +73,10 @@
   @include no-button;
   @include white-button;
   line-height: 16px;
-  padding: 18px 11px;
-  width: 100%;
+  padding: 16px 11px;
+  width: 73.8%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
