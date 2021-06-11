@@ -11,7 +11,7 @@
 }
 
 .form__type {
-  margin-bottom: 43px;
+  margin-bottom: 34px;
 }
 
 .form__title {
@@ -31,12 +31,24 @@
     height: 1px;
     background-color: $tiffany;
     flex-grow: 1;
-    margin-left: 15px;
+    margin-left: 22px;
   }
 
   &--tel,
   &--email {
     margin-bottom: 0;
+  }
+
+  &--color {
+    margin-bottom: 24px;
+  }
+
+  &--name {
+    margin-bottom: 19px;
+  }
+
+  &--extra {
+    margin-bottom: 23px;
   }
 }
 
@@ -54,6 +66,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--checkbox {
+    margin-bottom: 21px;
+  }
+
+  &--name {
+    margin-bottom: 0;
+  }
 }
 
 .form__label {
@@ -61,21 +81,23 @@
   font-size: 17px;
   line-height: 18px;
   color: $black;
-  padding-left: 61px;
+  padding-left: 60px;
   position: relative;
-  display: block;
+  display: flex;
   cursor: pointer;
+  min-height: 40px;
+  align-items: center;
 
   &--radio {
-    padding: 3px 0 3px 61px;
+    padding-top: 5px;
   }
 
   &--radio::before {
     content: "";
     position: absolute;
-    width: 42px;
-    height: 42px;
-    top: -5px;
+    width: 40px;
+    height: 40px;
+    top: 0;
     left: 0;
     border: 2px solid $dark-brown;
     border-radius: 50%;
@@ -86,7 +108,7 @@
     position: absolute;
     width: 38px;
     height: 38px;
-    top: -7px;
+    top: 0;
     left: 0;
     border: 2px solid $dark-brown;
   }
@@ -99,11 +121,11 @@
 .form__button--radio:checked + .form__label--radio::after {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-color: $tiffany;
     border-radius: 50%;
-    top: 7px;
+    top: 12px;
     left: 12px;
 }
 
@@ -122,7 +144,7 @@
   width: 23px;
   height: 16px;
   background-image: url("../img/ svg/tick.svg");
-  top: 5px;
+  top: 11px;
   left: 8px;
 }
 
@@ -141,16 +163,12 @@
   border-color: rgba($black, 0.3);
 }
 
-.form__item--radio {
-  margin-bottom: 24px;
-}
-
-.form__item--checkbox {
-  margin-bottom: 43px;
-}
-
 .form__color {
-  margin-bottom: 43px;
+  margin-bottom: 31px;
+}
+
+.form__name {
+  margin-bottom: 26px;
 }
 
 .form__name-wrapper {
@@ -160,10 +178,10 @@
 .form__input {
   @include placeholder;
   width: 100%;
-  padding: 17px 9px 17px 0;
+  padding-bottom: 12px;
   border: none;
   border-bottom: 2px solid $black;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
   font-size: 19px;
   font-weight: 400;
   line-height: 18px;
@@ -172,6 +190,11 @@
   &:hover,
   &:active {
     border-bottom-color: $tiffany;
+  }
+
+  &--contacts {
+    padding: 12px 0 15px 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -221,6 +244,10 @@
   }
 }
 
+.form__extra {
+  margin-bottom: 10px;
+}
+
 .form__asterisk {
   font-size: 14px;
   line-height: 16px;
@@ -231,7 +258,10 @@
 .form__submit-button {
   @include no-button;
   @include white-button;
-  padding: 18px 37px;
+  padding: 16px 18px;
+  font-size: 17px;
+  line-height: 16px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
