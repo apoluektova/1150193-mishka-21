@@ -472,7 +472,7 @@
 @media (min-width: $desktop-width) {
   .form {
     padding: 0;
-    padding-top: 98.5px;
+    padding-top: 103px;
     padding-bottom: 50px;
     margin: 0;
     max-width: none;
@@ -489,24 +489,37 @@
   }
 
   .form__type {
-    padding: 0 97px 49px;
+    padding: 0 97px 39px 110px;
     max-width: 1150px;
     margin: 0 auto;
   }
 
   .form__title {
-    width: 13.4%;
+    width: 12.2%;
+
+    &--color {
+      margin-top: 19px;
+      width: 13.8%;
+    }
+
+    &--name,
+    &--tel,
+    &--email,
+    &--extra {
+      width: 14.5%;
+    }
   }
 
   .form__color {
-    padding-left: 97px;
-    padding-right: 96px;
+    padding-left: 110px;
+    padding-right: 200px;
+    padding-top: 48px;
     margin: 0 auto;
     max-width: 1150px;
   }
 
   .form__name {
-    padding-left: 97px;
+    padding-left: 110px;
     padding-right: 225px;
     max-width: 1150px;
     margin: 0 auto;
@@ -516,23 +529,39 @@
     &--name {
       width: 86.6%;
     }
+
+    &--checkbox {
+      width: 87.8%;
+    }
   }
 
   .form__item {
-    width: 33.33333%;
+    width: 100%;
+
+    &--checkbox {
+      width: 200px;
+    }
 
     &--name {
-      width: 100%;
+      margin-bottom: 26px;
     }
+  }
+
+  .form__label--checkbox {
+    padding-top: 19px;
   }
 
   .form__phone,
   .form__email,
   .form__extra {
-    padding-left: 97px;
+    padding-left: 110px;
     padding-right: 225px;
     max-width: 1150px;
     margin: 0 auto;
+  }
+
+  .form__extra {
+    padding-bottom: 47px;
   }
 
   .form__phone-wrapper,
@@ -545,7 +574,7 @@
   }
 
   .form__submit-wrapper {
-    padding-left: 210px;
+    padding-left: 225px;
     padding-right: 225px;
   }
 }
