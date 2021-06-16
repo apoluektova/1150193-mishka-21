@@ -12,6 +12,8 @@
     &--mobile {
       display: block;
       position: absolute;
+      width: 86px;
+      height: 35px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -50,7 +52,7 @@
 
 .navigation__close {
   display: none;
-  margin-top: 7px;
+  margin-top: 2px;
 }
 
 .navigation--nojs .navigation__toggle {
@@ -148,8 +150,9 @@
 
   .navigation__delivery {
     display: block;
-    padding: 20.5px 50px 0 31px;
+    padding: 19px 50px 0 31px;
     text-align: right;
+    font-size: 15px;
   }
 }
 
@@ -175,7 +178,6 @@
 
   .navigation__wrapper-desktop {
     display: flex;
-    //border-bottom: 1px solid $light-grey;
     border-right: 1px solid $light-grey;
   }
 
@@ -191,7 +193,7 @@
 
   .navigation__wrapper-logo {
     order: 2;
-    padding: 8px 101px 8px 9px;
+    padding: 9px 99px 8px 41px;
     border: 0;
   }
 
@@ -201,9 +203,5 @@
 
   .navigation__user {
     margin-left: auto;
-  }
-
-  .navigation__delivery {
-    padding-right: 32px;
   }
 }

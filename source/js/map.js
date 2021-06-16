@@ -13,7 +13,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/ svg/map-pin.svg',
     iconImageSize: [67, 100],
-    iconImageOffset: [-25, -100]
+    iconImageOffset: [-22, -80]
   });
 
   myMap.geoObjects.add(myPlacemark);

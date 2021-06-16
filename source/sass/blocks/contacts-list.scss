@@ -6,7 +6,7 @@
 
 .contacts-list__item {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 30px;
   vertical-align: top;
@@ -44,11 +44,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 49px;
   }
 
   .contacts-list__item {
     width: 50%;
     margin-bottom: 0;
+    font-size: 17px;
   }
 }
 
@@ -73,7 +75,7 @@
     width: 245px;
 
     &--left {
-      width: 82px;
+      width: 78px;
     }
   }
 }

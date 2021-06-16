@@ -18,14 +18,13 @@
 
 .contacts__map {
   padding: 0;
-  //width: 320px;
 }
 
 .contacts__button {
   @include no-button;
   @include white-button;
   display: block;
-  padding: 16px 38px;
+  padding: 14px 16px 14px 16px;
   width: 260px;
   margin: 0 auto;
   outline: none;
@@ -33,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 46px;
+    padding-top: 69px;
     padding-bottom: 57px;
     position: relative;
     width: 100%;
@@ -42,7 +41,7 @@
       content: "";
       position: absolute;
       top: 46px;
-      right: 50px;
+      right: 53px;
       width: 47px;
       height: 81px;
       background-image: url("../img/ svg/flag.svg");
@@ -52,6 +51,7 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 49px;
   }
 
   .contacts__button {
@@ -63,12 +63,13 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-top: 71px;
-    padding-bottom: 105px;
+    padding: 150px 50px 105px 225px;
     height: 633px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-width: 1150px;
+    margin: 0 auto;
 
     &::before {
       top: 133px;
@@ -78,15 +79,16 @@
 
   .contacts__wrapper {
     width: 331px;
-    margin-left: 174px;
-    // margin-bottom: 84.5px;
     order: 1;
+    padding: 0;
+    margin: 0;
+    margin-right: 18px;
+    margin-bottom: 2px;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    margin-top: 79px;
     margin-bottom: 34.5px;
   }
 
@@ -99,6 +101,5 @@
   .contacts__button {
     margin: 0;
     order: 2;
-    margin-left: 175px;
   }
 }

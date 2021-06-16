@@ -43,6 +43,7 @@
 .weekly-promo__description {
   font-size: 15px;
   margin: 0;
+  margin-bottom: 18px;
 }
 
 .weekly-promo__table {
@@ -50,7 +51,7 @@
 }
 
 .weekly-promo__image {
-  margin-bottom: 25.5px;
+  margin-bottom: 19px;
 }
 
 .weekly-promo__price {
@@ -65,7 +66,7 @@
 .weekly-promo__button {
   @include no-button;
   @include white-button;
-  padding: 16px 70px;
+  padding: 13px 16px 15px 16px;
   width: 260px;
 }
 
@@ -89,7 +90,7 @@
       line-height: 17px;
       text-align: center;
       left: 555px;
-      top: 2px;
+      top: 5px;
       width: 100px;
     }
   }
@@ -98,24 +99,26 @@
     font-size: 17px;
     line-height: 30px;
     width: 292px;
-    margin-bottom: 48px;
+    margin-bottom: 37px;
   }
 
   .weekly-promo__table {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 
   .weekly-promo__image {
     float: right;
     width: 334px;
-    margin-top: -310px;
+    margin-top: -296px;
     margin-bottom: 0;
   }
 
   .weekly-promo__price {
     width: 292px;
     margin: 0;
-    margin-bottom: 33px;
+    margin-left: -2px;
+    margin-bottom: 32px;
+    font-size: 20px;
   }
 
   .weekly-promo__button {
@@ -127,11 +130,13 @@
 
 @media (min-width: $desktop-width) {
   .weekly-promo {
-    padding-top: 115px;
+    padding-top: 120px;
     padding-bottom: 96px;
 
     &::after {
+      width: 1050px;
       height: 23px;
+      right: 50px;
       background-image: url("../img/ svg/zigzag-desktop.svg");
     }
   }
@@ -140,13 +145,13 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 35px;
-    margin-left: 225px;
+    margin-left: 175px;
     position: relative;
     z-index: 2;
 
     &::before {
       left: -143px;
-      top: 5px;
+      top: 8px;
     }
   }
 
@@ -155,11 +160,11 @@
   }
 
   .weekly-promo__description {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .weekly-promo__table {
-    margin-bottom: 109px;
+    margin-bottom: 114px;
   }
 
   .weekly-promo__price {
@@ -169,6 +174,5 @@
   .weekly-promo__image {
     width: 525px;
     margin-top: -525px;
-    // margin-right: 173px;
   }
 }

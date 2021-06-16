@@ -1,16 +1,17 @@
 .process {
   @include wrapper;
-  margin-bottom: 58px;
+  padding-bottom: 58px;
 }
 
 .process__wrapper {
   border: 1px solid $light-grey;
-  padding: 21.5px 0 33px;
+  padding: 25px 0 33px;
+  width: 100%;
 }
 
 .process__title {
   margin: 0;
-  padding: 0 32px 26.5px 89px;
+  padding: 0 32px 24px 89px;
   position: relative;
   font-size: 17px;
 
@@ -19,7 +20,7 @@
     position: absolute;
     width: 32px;
     height: 22px;
-    top: 0;
+    top: 12px;
     margin-top: auto;
     margin-bottom: auto;
     left: 32px;
@@ -29,7 +30,7 @@
 
 .process__video {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -72,11 +73,17 @@
   @include no-button;
   @include white-button;
   line-height: 16px;
-  padding: 18px 11px;
-  width: 100%;
+  padding: 16px 11px;
+  width: 73.8%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .process {
+    padding-bottom: 64px;
+  }
+
   .process__wrapper {
     display: flex;
     flex-direction: column;
@@ -86,19 +93,20 @@
   .process__video {
     order: 1;
     position: relative;
-    margin-bottom: 41px;
+    margin-bottom: 35px;
   }
 
   .process__title {
     order: 2;
     padding-top: 0;
     padding-left: 107px;
-    padding-right: 40px;
+    padding-right: 0;
     margin-bottom: 24.5px;
     font-size: 20px;
+    padding-bottom: 0;
 
     &::before {
-      top: 0;
+      top: -2px;
       left: 42px;
     }
   }
@@ -117,10 +125,15 @@
     width: 584px;
     margin: 0 auto;
     margin-bottom: 46px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .process {
+    padding-bottom: 105px;
+  }
+
   .process__wrapper {
     flex-wrap: wrap;
     height: 455px;
@@ -131,10 +144,12 @@
     width: 178px;
     padding-top: 49px;
     margin-top: 47px;
+    padding-left: 21px;
+    margin-bottom: 26px;
 
     &::before {
       top: 0;
-      left: 0;
+      left: 21px;
     }
   }
 
@@ -146,10 +161,13 @@
   .process__video-description {
     width: 253px;
     padding: 0;
+    padding-left: 21px;
+    margin-bottom: 52px;
   }
 
   .process__button {
     width: 230px;
     margin: 0;
+    margin-left: 23px;
   }
 }

@@ -1,5 +1,6 @@
 .copyright {
-  padding-top: 22px;
+  padding-top: 12px;
+  padding-left: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +12,7 @@
   font-size: 19px;
   line-height: 18px;
   display: block;
-  margin-right: 27px;
+  margin-right: 21px;
 }
 
 .copyright__link {
@@ -26,8 +27,22 @@
   }
 }
 
+.copyright__logo {
+  margin-top: 6px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
-    padding-top: 0;
+    padding: 0;
+  }
+
+  .copyright__text {
+    margin-top: -7px;
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .copyright__text {
+//     margin-left: 3px;
+//   }
+// }

@@ -33,15 +33,15 @@
 
   .footer__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 51px;
+    padding-top: 42px;
     padding-bottom: 58px;
   }
 
   .footer__link {
     display: block;
     color: $black;
+    margin-right: 122px;
 
     &:hover {
       color: $medium-green-hover;
@@ -56,5 +56,16 @@
     &::before {
       display: none;
     }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding-top: 44px;
+  }
+
+  .footer__link {
+    margin-right: 311px;
   }
 }

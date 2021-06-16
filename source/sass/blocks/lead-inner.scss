@@ -40,6 +40,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .lead-inner {
+    padding-bottom: 110px;
+  }
+
+  .lead-inner__text {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   .lead-inner:after {
     display: none;
   }
